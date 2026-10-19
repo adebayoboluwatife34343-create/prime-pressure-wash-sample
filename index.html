@@ -56,7 +56,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdro
 @keyframes spray{0%{opacity:.25}50%{opacity:1}100%{opacity:.25}}
 .drop{animation:drip 1.4s ease-in infinite}
 @keyframes drip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(60px);opacity:0}}
-.cleanpath{stroke-dasharray:500;stroke-dashoffset:500;animation:clean 4s ease-in-out infinite}
+.cleanpath{stroke-dasharray:340;stroke-dashoffset:340;animation:clean 4s ease-in-out infinite}
 @keyframes clean{60%,100%{stroke-dashoffset:0}}
 .badge{position:absolute;top:0;right:0;width:118px;height:118px;border-radius:50%;background:var(--sun);color:#3a2d00;display:grid;place-items:center;text-align:center;font-family:'Poppins';font-weight:900;font-size:.85rem;line-height:1.1;box-shadow:0 10px 30px rgba(0,0,0,.25);animation:pulse 2.6s ease-in-out infinite}
 @keyframes pulse{50%{transform:scale(1.07) rotate(6deg)}}
@@ -206,20 +206,20 @@ footer b{color:#fff}
   <div class="wandbox" aria-hidden="true">
    <div class="badge">FREE<br>ESTIMATES</div>
    <svg viewBox="0 0 400 340">
-    <rect x="20" y="220" width="360" height="100" rx="12" fill="#6b5a3e" opacity=".85"/>
-    <path class="cleanpath" d="M40 270 L360 270" stroke="#e3eaee" stroke-width="80" stroke-linecap="round"/>
-    <g transform="rotate(28 250 90)">
-     <rect x="170" y="70" width="170" height="16" rx="8" fill="#ffd23f"/>
-     <rect x="300" y="62" width="60" height="34" rx="10" fill="#0b2238"/>
-     <rect x="150" y="72" width="26" height="12" rx="4" fill="#0b2238"/>
-    </g>
+    <rect x="20" y="220" width="360" height="100" rx="12" fill="#6b5a3e"/>
+    <circle cx="80" cy="250" r="14" fill="#3f4a22" opacity=".6"/><circle cx="300" cy="290" r="20" fill="#3f4a22" opacity=".55"/><circle cx="200" cy="300" r="10" fill="#4a3b22" opacity=".6"/>
+    <path class="cleanpath" d="M30 270 L370 270" stroke="#e3eaee" stroke-width="86" stroke-linecap="butt"/>
+    <line x1="350" y1="30" x2="200" y2="140" stroke="#ffd23f" stroke-width="16" stroke-linecap="round"/>
+    <rect x="330" y="10" width="44" height="34" rx="10" fill="#0b2238" transform="rotate(-36 352 27)"/>
+    <line x1="210" y1="133" x2="186" y2="150" stroke="#0b2238" stroke-width="12" stroke-linecap="round"/>
+    <path d="M374 40 C395 90 390 160 395 230" stroke="#0b2238" stroke-width="6" fill="none"/>
     <g class="spray">
-     <path d="M168 132 L80 250 L150 255 Z" fill="#7fdcff" opacity=".55"/>
-     <path d="M168 132 L110 250 L135 252 Z" fill="#fff" opacity=".7"/>
+     <path d="M186 150 L120 262 L200 266 Z" fill="#7fdcff" opacity=".55"/>
+     <path d="M186 150 L150 262 L172 264 Z" fill="#fff" opacity=".75"/>
     </g>
-    <circle class="drop" cx="95" cy="240" r="5" fill="#fff"/>
-    <circle class="drop" cx="130" cy="244" r="4" fill="#fff" style="animation-delay:.5s"/>
-    <circle class="drop" cx="112" cy="236" r="3" fill="#fff" style="animation-delay:.9s"/>
+    <circle class="drop" cx="140" cy="250" r="5" fill="#fff"/>
+    <circle class="drop" cx="185" cy="254" r="4" fill="#fff" style="animation-delay:.5s"/>
+    <circle class="drop" cx="160" cy="246" r="3" fill="#fff" style="animation-delay:.9s"/>
    </svg>
   </div>
  </div>
