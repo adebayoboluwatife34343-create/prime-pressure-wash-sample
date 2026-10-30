@@ -31,6 +31,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdro
 .btn:hover{transform:translateY(-3px) scale(1.03)}
 .b1{background:linear-gradient(135deg,var(--aqua),var(--ocean));color:#fff;box-shadow:0 8px 22px rgba(0,168,232,.4)}
 .b2{background:var(--mint);color:#033;box-shadow:0 8px 22px rgba(47,224,180,.35)}
+.bw{background:#25d366;color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.4)}
 .b3{background:rgba(255,255,255,.15);color:#fff;border:2px solid #fff}
 .burger{display:none;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--deep)}
 /* hero */
@@ -198,7 +199,8 @@ footer b{color:#fff}
    <h1>Bring your property <span class="shine">back to life.</span></h1>
    <p class="lead">Driveways, sidewalks, patios, decks, fences, siding and more. Professional-grade equipment, eco-friendly cleaning solutions and honest pricing from a local small business.</p>
    <div class="ctas">
-    <a class="btn b2" href="sms:+13524767467">&#128172; Text for a Free Estimate</a>
+    <a class="btn bw" href="https://wa.me/13524767467?text=Hi%20Lavelle%2C%20I%20would%20like%20a%20free%20estimate." target="_blank" rel="noopener">&#128172; WhatsApp for a Free Estimate</a>
+    <a class="btn b2" href="sms:+13524767467">&#9993; Text Us</a>
     <a class="btn b3" href="tel:+13524767467">&#128222; Call (352) 476-7467</a>
    </div>
    <div class="chips"><span>&#10004; Licensed and insured</span><span>&#10004; Free estimates</span><span>&#10004; Open 7 days</span></div>
@@ -281,7 +283,7 @@ footer b{color:#fff}
    <blockquote>"I'm the proud owner of Prime Pressure Wash, your local pressure washing expert. My goal is to provide top-quality service with honest pricing and a friendly touch."<cite>Lavelle Williams, Owner</cite></blockquote>
    <p>Prime Pressure Wash LLC is a local, owner-run Florida business. Whether you want to boost curb appeal, get ready for painting, or just freshen things up, Lavelle brings professional-grade equipment and eco-friendly cleaning solutions to safely remove dirt, mold, mildew and stains.</p>
    <p style="margin-top:12px"><b>Licensed, insured and committed to your satisfaction.</b> Thanks for supporting a local small business!</p>
-   <div class="ctas" style="margin-top:22px"><a class="btn b1" href="tel:+13524767467">&#128222; Call Lavelle</a><a class="btn b2" href="sms:+13524767467">&#128172; Text Lavelle</a></div>
+   <div class="ctas" style="margin-top:22px"><a class="btn b1" href="tel:+13524767467">&#128222; Call Lavelle</a><a class="btn bw" href="https://wa.me/13524767467?text=Hi%20Lavelle%2C%20I%20would%20like%20a%20free%20estimate." target="_blank" rel="noopener">&#128172; WhatsApp Lavelle</a></div>
   </div>
  </div>
 </section>
@@ -343,7 +345,7 @@ footer b{color:#fff}
    <h2>Ready for a cleaner property?</h2>
    <p class="sub">Fill in the form and it opens a text or email to Lavelle with your details. Or reach out directly:</p>
    <a class="big" href="tel:+13524767467">(352) 476-7467</a>
-   <p>&#128172; Call or text any day, 7am to 9pm</p>
+   <p>&#128172; Call, text or <a href="https://wa.me/13524767467?text=Hi%20Lavelle%2C%20I%20would%20like%20a%20free%20estimate." target="_blank" rel="noopener">WhatsApp</a> any day, 7am to 9pm</p>
    <p>&#9993; <a href="mailto:Lavellew225@gmail.com">Lavellew225@gmail.com</a></p>
    <p>&#128077; Find Prime Pressure Wash on Facebook <span class="ph">Facebook link to be added</span></p>
   </div>
@@ -357,7 +359,7 @@ footer b{color:#fff}
    <div><label for="t">Town</label><input id="t" placeholder="Dunnellon"></div>
    <div><label for="w">When?</label><select id="w"><option>As soon as possible</option><option>This week</option><option>Next few weeks</option><option>Just getting a price</option></select></div>
    <div class="full"><label for="m">Anything else? (HOA notice, size, stains)</label><textarea id="m" rows="3" placeholder="Two-car driveway with mildew, HOA letter received"></textarea></div>
-   <div class="full fbtns"><button class="btn b1" type="button" onclick="send('sms')">&#128172; Send by Text</button><button class="btn b2" type="button" onclick="send('mail')">&#9993; Send by Email</button></div>
+   <div class="full fbtns"><button class="btn bw" type="button" onclick="send('wa')">&#128172; Send on WhatsApp</button><button class="btn b1" type="button" onclick="send('sms')">Send by Text</button><button class="btn b2" type="button" onclick="send('mail')">&#9993; Send by Email</button></div>
   </form>
  </div>
 </section>
@@ -379,7 +381,7 @@ footer b{color:#fff}
  <p style="margin-top:14px;font-size:.85rem">Sample website by LeadSky Limited. Placeholders are marked and will be replaced with real photos, reviews and details.</p>
 </footer>
 
-<div class="fab"><a class="btn b1" href="tel:+13524767467">&#128222; Call</a><a class="btn b2" href="sms:+13524767467">&#128172; Text</a></div>
+<div class="fab"><a class="btn b1" href="tel:+13524767467">&#128222; Call</a><a class="btn bw" href="https://wa.me/13524767467?text=Hi%20Lavelle%2C%20I%20would%20like%20a%20free%20estimate." target="_blank" rel="noopener">&#128172; WhatsApp</a></div>
 
 <script>
 // bubbles
@@ -401,7 +403,8 @@ document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('cli
 function send(kind){var n=document.getElementById('n').value||'(name)',p=document.getElementById('p').value,t=document.getElementById('t').value,w=document.getElementById('w').value,m=document.getElementById('m').value;
  var c=[].map.call(document.querySelectorAll('.checks input:checked'),function(x){return x.value}).join(', ')||'Not sure yet';
  var msg='Hi Lavelle, I would like a free estimate.\nName: '+n+(p?'\nPhone: '+p:'')+'\nCleaning: '+c+(t?'\nTown: '+t:'')+'\nWhen: '+w+(m?'\nDetails: '+m:'');
- if(kind==='sms')location.href='sms:+13524767467?&body='+encodeURIComponent(msg);
+ if(kind==='wa')window.open('https://wa.me/13524767467?text='+encodeURIComponent(msg),'_blank');
+ else if(kind==='sms')location.href='sms:+13524767467?&body='+encodeURIComponent(msg);
  else location.href='mailto:Lavellew225@gmail.com?subject='+encodeURIComponent('Free estimate request')+'&body='+encodeURIComponent(msg);}
 </script>
 </body>
